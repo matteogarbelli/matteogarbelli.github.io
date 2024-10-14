@@ -1,10 +1,10 @@
 ---
-title: "Teaching experience 2"
+title: "Statistical Learning"
 collection: teaching
-type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
-venue: "University 1, Department"
-date: 2015-01-01
+type: "Master Degree in Data Science "
+#permalink: /teaching/2015-spring-teaching-1
+venue: "University of Verona"
+date: 2021-03-01 - 2021-06-30
 location: "City, Country"
 ---
 
