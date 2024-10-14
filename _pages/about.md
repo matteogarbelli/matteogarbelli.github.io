@@ -15,11 +15,11 @@ My name is Matteo Garbelli and I am a Postdoc Researcher in the College of Mathe
 
 I am working in the Stochastic Analysis group of Luca Di Persio. 
 
-My research interests lie in the areas of stochastic processes, machine learning and mean field games. In particular, my current research focuses on:
+My research interests lie in the areas of Stochastic Processes, Machine Learning and Mean Field Games. In particular, my current research focuses on:
 
-- Mean Field Games with common noise;
+- Mean Field Games with (and without) common noise;
 - Adpated Wasserstein Distance;
-- BSDE with memory features;
+- BSDEs with memory features;
 - McKean Vlasov S(P)DES.
 
 
@@ -36,7 +36,7 @@ Contact Details
 
 
 E-mail address:
-matteo.garbelli[at]univr[dot]it
+matteo[dot]garbelli[at]univr[dot]it
 
 Office:
 
