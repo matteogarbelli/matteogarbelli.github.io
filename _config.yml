@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Matteo Garbelli"
   pronouns         : # example: "she/her"  
-  bio              : "PhD in Mathematics"
+  bio              : "Postdoc Reseacher in Applied Mathematics"
   location         : "Verona"
   employer         : "University of Verona"
   uri              : # URL
@@ -37,7 +37,7 @@ author:
   orcid            : "https://orcid.org/0000-0003-1642-0846"
   #semantic         : # URL
   #pubmed           : # URL
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Matteo-Garbelli"
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -193,9 +193,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+  #talks:
+   # output: true
+   # permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
