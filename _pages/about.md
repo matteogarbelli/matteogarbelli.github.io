@@ -28,11 +28,9 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 
 You can contact me at matteo.garbelli[at]univr.it, or see my full contact details below.
 
-
+======
 
 Contact Details
-
-======
 
 
 E-mail address:
