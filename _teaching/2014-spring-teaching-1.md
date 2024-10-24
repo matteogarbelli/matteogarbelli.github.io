@@ -7,5 +7,3 @@ venue: "University of Verona"
 date: 2021-03-01 - 2021-06-30
 location: "Verona, Italy"
 ---
-
-
