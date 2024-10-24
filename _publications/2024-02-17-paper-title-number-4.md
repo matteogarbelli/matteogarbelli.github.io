@@ -8,4 +8,4 @@ date: 2024-02-17
 venue: 'Preprint on Arxiv'
 paperurl: ' https://doi.org/10.48550/arXiv.2203.15583'
 citation: 'L. Di Persio, M. Garbelli, M. Ricciardi - "The Master Equation in a Bounded Domain with Absorption" on Arxiv https://doi.org/10.48550/arXiv.2203.15583'
-
+---

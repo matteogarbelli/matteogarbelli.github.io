@@ -2,7 +2,7 @@
 title: "From Optimal Control to Mean Field Optimal Transport via Stochastic Neural Networks"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-6
+permalink: /publication/2023-12-08-paper-title-number-6
 #excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2023-09-08
 venue: 'Symmetry'

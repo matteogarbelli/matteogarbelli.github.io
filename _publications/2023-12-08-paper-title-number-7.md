@@ -2,7 +2,7 @@
 title: "Time-Delayed Generalized BSDEs"
 collection: publications
 category: manuscripts
-permalink: /publication/2015-10-01-paper-title-number-7
+permalink: /publication/2023-12-08-paper-title-number-7
 #excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2024-04-06
 venue: 'Stochastic Processes and their Applications'
