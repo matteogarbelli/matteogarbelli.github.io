@@ -24,7 +24,7 @@ My research interests lie in the areas of Stochastic Processes, Machine Learning
 
 
 
-I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio. Here is [my thesis](https:matteogarbelli.github.io/files/thesis), titled "Stochastic Differential Equations and Mean Field Games towards Machine Learning applications".
+I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio. Here is [my thesis](https://iris.unitn.it/handle/11572/398234?mode=simple), titled "Stochastic Differential Equations and Mean Field Games towards Machine Learning applications".
 
 You can contact me at matteo.garbelli[at]univr.it, or see my full contact details below.
 
