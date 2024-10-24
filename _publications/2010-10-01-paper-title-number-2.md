@@ -9,3 +9,4 @@ venue: 'Risks'
 #slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://doi.org/10.3390/risks9020033f'
 citation: 'L. Di Persio, M. Garbelli, K. Wallbaum - “Forward-Looking Volatility Estimation for Risk-Managed Investment strategies during the COVID-19 Crisis”  Risks 2021, 9(2), 33; https://doi.org/10.3390/risks9020033'
+---

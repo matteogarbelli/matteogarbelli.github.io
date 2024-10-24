@@ -8,7 +8,7 @@ date: 2024-10-01 - 2025-01-31
 location: "City, Country"
 ---
 
-#This is a description of a teaching experience. You can use markdown like any other post.
+
 
 Heading 1
 ======

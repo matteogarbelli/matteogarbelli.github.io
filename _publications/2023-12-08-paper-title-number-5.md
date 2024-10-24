@@ -2,7 +2,7 @@
 title: "Volatility Forecasting with Hybrid Neural Networks methods for Risk Parity Investment Strategies"
 collection: publications
 category: manuscripts
-permalink: /publication/2024-02-17-paper-title-number-5
+permalink: /publication/2023-12-08-paper-title-number-5
 #excerpt: 'This paper is about fixing template issue #693.'
 date: 2023-11-01
 venue: 'Expert Systems With Applications'
