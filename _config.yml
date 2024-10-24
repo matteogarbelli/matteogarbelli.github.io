@@ -226,13 +226,13 @@ defaults:
       share: true
       comments: true
   # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
+  #- scope:
+   #   path: ""
+    #  type: talks
+    #values:
+     # layout: talk
+      #author_profile: true
+      #share: true
 
 
 # Sass/SCSS
