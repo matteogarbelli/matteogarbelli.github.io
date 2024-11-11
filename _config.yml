@@ -21,7 +21,7 @@ repository               : "matteogarbelli/matteogarbelli.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Matteo Garbelli"
   pronouns         : # example: "she/her"  
   bio              : "Postdoc Reseacher in Applied Mathematics"
