@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Matteo Garbelli Personal Website"
+title: "Matteo Garbelli's Personal Homepage"
 author_profile: true
 redirect_from: 
   - /about/
@@ -37,5 +37,5 @@ matteo[dot]garbelli[at]univr[dot]it
 
 Office:
 
-Room 2.12, Department of Informatics, University of Verona, Strada Le Grazie 15
+Room 2.22, Department of Informatics, University of Verona, Strada Le Grazie 15
 
