@@ -1,12 +1,12 @@
 ---
-permalink: /
-title: "Matteo Garbelli's Personal Homepage"
+layout: single
+title: "About"
+permalink: /about/
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
 
 
 
