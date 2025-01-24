@@ -33,8 +33,9 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 
 {% for teaching in site.teaching %}
 - **{{ teaching.title }}**  
-  Semester: {{ teaching.semester }}  
-  Description: {{ teaching.description }}  
+  Course: {{ teaching.type }}  
+  University: {{ teaching.venue }}  
+  Period: {{ teaching.date }}  
 {% endfor %}
 
 ---
