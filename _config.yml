@@ -191,11 +191,9 @@ kramdown:
 # These settings control the types of collections used by the template
 collections:
   publications:
-    output: true
-    permalink: /publications/:title/
+    output: false # We do not want separate publication pages
   teaching:
-    output: true
-    permalink: /teaching/:title/
+    output: false # We do not want separate teaching pages
 
 
 #collections:
