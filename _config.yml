@@ -189,7 +189,14 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
-collections: []
+collections:
+  publications:
+    output: true
+    permalink: /publications/:title/
+  teaching:
+    output: true
+    permalink: /teaching/:title/
+
 
 #collections:
  # teaching:
