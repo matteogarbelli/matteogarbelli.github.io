@@ -1,9 +1,9 @@
 ---
 layout: single
-title: "Matteo Garbelli"
+title: ""
 ---
 
-## About Me
+
 
 My name is Matteo Garbelli, and I am a Postdoc Researcher in the College of Mathematics at the Department of Informatics, University of Verona.
 
