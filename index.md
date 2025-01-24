@@ -32,10 +32,10 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 ## Teaching
 
 {% for teaching in site.teaching %}
-- **{{ teaching.title }}**  
-    Course: {{ teaching.type }}  
-    {{ teaching.venue }} 
-    {{ teaching.date }} 
+- **{{ teaching.title }}**
+    Course: {{ teaching.type }} 
+    At: {{ teaching.venue }}
+    Year: {{ teaching.date }} 
      
 {% endfor %}
 
@@ -43,7 +43,7 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 
 ## Contact
 
-- **Email**: [matteo.garbelli@univr.it](mailto:matteo.garbelli@univr.it)  
+- **Email**: [matteo.garbelli [at] univr.it](mailto:matteo.garbelli@univr.it)  
 - **Office**: Room 2.22, Department of Informatics, University of Verona, Strada Le Grazie 15  
 - **Google Scholar**: [Profile](https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao)  
 - **ResearchGate**: [Profile](https://www.researchgate.net/profile/Matteo-Garbelli)  
