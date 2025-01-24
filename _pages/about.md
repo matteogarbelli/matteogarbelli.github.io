@@ -2,10 +2,6 @@
 layout: single
 title: "About"
 permalink: /about/
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 
@@ -24,7 +20,30 @@ I am working in the Stochastic Analysis group of Luca Di Persio. My research int
 
 I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio. Here is [my thesis](https://iris.unitn.it/handle/11572/398234?mode=simple), titled "Stochastic Differential Equations and Mean Field Games towards Machine Learning applications".
 
+---
 
+## Publications
+
+{% for publication in site.publications %}
+- **{{ publication.title }}**  
+  Published in: {{ publication.venue }}  
+  Citation: {{ publication.citation }}  
+  [Read the Paper]({{ publication.paperurl }})  
+{% endfor %}
+
+---
+
+## Teaching
+
+{% for teaching in site.teaching %}
+- **{{ teaching.title }}**  
+  Semester: {{ teaching.semester }}  
+  Description: {{ teaching.description }}  
+{% endfor %}
+
+---
+
+Feel free to contact me at [email](mailto:matteo.garbelli@univr.it) or visit my [Google Scholar](https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao).
 
 ======
 
