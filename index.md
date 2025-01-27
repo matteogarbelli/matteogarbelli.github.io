@@ -20,7 +20,7 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 
 ## Publications
 
-{% for publication in site.publications %}
+{% for publication in site.publications reversed %}
 - **{{ publication.title }}**  
   Published in: {{ publication.venue }}  
   Citation: {{ publication.citation }}  
@@ -34,10 +34,18 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 {% for teaching in site.teaching %}
 - **{{ teaching.title }}**
     Course: {{ teaching.type }} 
-    At: {{ teaching.venue }}
-    Year: {{ teaching.year }} 
+    at {{ teaching.venue }}
+    Year {{ teaching.year }} 
      
 {% endfor %}
+
+
+
+---
+
+## Grants
+
+- “Machine learning approaches to stochastic optimization and mean field games” for the project “GIRO-WM – Green Inspired Revolution for Optimal-Workforce Management” (CUP B93C22002160003)
 
 ---
 
@@ -45,5 +53,3 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 
 - **Email**: [matteo.garbelli [at] univr.it](mailto:matteo.garbelli@univr.it)  
 - **Office**: Room 2.22, Department of Informatics, University of Verona, Strada Le Grazie 15  
-- **Google Scholar**: [Profile](https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao)  
-- **ResearchGate**: [Profile](https://www.researchgate.net/profile/Matteo-Garbelli)  
