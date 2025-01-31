@@ -45,7 +45,7 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 
 ## Grants
 
-- “Machine learning approaches to stochastic optimization and mean field games” for the project “GIRO-WM – Green Inspired Revolution for Optimal-Workforce Management” (CUP B93C22002160003)
+- “Machine learning approaches to stochastic optimization and mean field games” for the project “GIRO-WM – Green Inspired Revolution for Optimal-Workforce Management” (CUP B93C22002160003) funded by Fondazione Caritro (Bando ricerca e sviluppo 2022/23)
 
 ---
 
