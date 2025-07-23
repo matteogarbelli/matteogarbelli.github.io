@@ -40,6 +40,12 @@ I obtained my PhD in 2023 from the University of Trento under the supervision of
 {% endfor %}
 
 
+---
+
+## Peer review activity
+
+- Chaos (American Institute of Physics)
+- Nonlinear Dynamics (Springer Nature)
 
 ---
 
