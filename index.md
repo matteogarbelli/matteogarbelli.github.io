@@ -1,6 +1,7 @@
 ---
 layout: single
-title: ""
+title: "Matteo Garbelli - Postdoc Researcher in Applied Mathematics"
+excerpt: "Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, and Mean Field Games."
 ---
 
 
