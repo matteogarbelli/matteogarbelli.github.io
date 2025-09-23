@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@variant dark (.dark &);
+@variant light (:not(.dark) &);
+
 /* Smooth scrolling and improved typography */
 html {
   scroll-behavior: smooth;
