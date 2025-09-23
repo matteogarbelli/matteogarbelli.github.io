@@ -87,14 +87,13 @@ export default function Navigation() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            {mounted && (
-              <button
-                onClick={toggleDarkMode}
-                className="rounded-md p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-              >
-                {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-              </button>
-            )}
+            <button
+              onClick={toggleDarkMode}
+              className="rounded-md p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              suppressHydrationWarning={true}
+            >
+              {mounted ? (darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />) : <Moon className="h-5 w-5" />}
+            </button>
           </div>
         </div>
       </nav>
@@ -132,15 +131,14 @@ export default function Navigation() {
                   ))}
                 </div>
                 <div className="py-6">
-                  {mounted && (
-                    <button
-                      onClick={toggleDarkMode}
-                      className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-gray-100"
-                    >
-                      {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-                      {darkMode ? 'Light Mode' : 'Dark Mode'}
-                    </button>
-                  )}
+                  <button
+                    onClick={toggleDarkMode}
+                    className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-gray-100"
+                    suppressHydrationWarning={true}
+                  >
+                    {mounted ? (darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />) : <Moon className="h-5 w-5" />}
+                    {mounted ? (darkMode ? 'Light Mode' : 'Dark Mode') : 'Dark Mode'}
+                  </button>
                 </div>
               </div>
             </div>
