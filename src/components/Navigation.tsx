@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { Menu, X, Moon, Sun } from 'lucide-react'
 
@@ -15,10 +15,35 @@ const navigation = [
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [darkMode, setDarkMode] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+    // Check for saved theme preference or system preference
+    const savedTheme = localStorage.getItem('theme')
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    const shouldUseDark = savedTheme === 'dark' || (!savedTheme && systemPrefersDark)
+
+    setDarkMode(shouldUseDark)
+    if (shouldUseDark) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [])
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
-    document.documentElement.classList.toggle('dark')
+    const newDarkMode = !darkMode
+    setDarkMode(newDarkMode)
+
+    if (newDarkMode) {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+    }
   }
 
   const scrollToSection = (href: string) => {
@@ -62,12 +87,14 @@ export default function Navigation() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button
-              onClick={toggleDarkMode}
-              className="rounded-md p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
-            >
-              {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
+            {mounted && (
+              <button
+                onClick={toggleDarkMode}
+                className="rounded-md p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              >
+                {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+              </button>
+            )}
           </div>
         </div>
       </nav>
@@ -105,13 +132,15 @@ export default function Navigation() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <button
-                    onClick={toggleDarkMode}
-                    className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-gray-100"
-                  >
-                    {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-                    {darkMode ? 'Light Mode' : 'Dark Mode'}
-                  </button>
+                  {mounted && (
+                    <button
+                      onClick={toggleDarkMode}
+                      className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-gray-100"
+                    >
+                      {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+                      {darkMode ? 'Light Mode' : 'Dark Mode'}
+                    </button>
+                  )}
                 </div>
               </div>
             </div>

@@ -47,7 +47,7 @@ export default function Home() {
               <div className="relative mx-auto h-48 w-48 lg:h-56 lg:w-56">
                 <Image
                   src="/images/profile.jpg"
-                  alt="Matteo Garbelli"
+                  alt="Matteo Garbelli - Postdoc Researcher in Applied Mathematics at University of Verona"
                   fill
                   className="rounded-full object-contain shadow-2xl"
                   priority
@@ -171,7 +171,7 @@ export default function Home() {
                 <div className="relative h-32 w-full mb-4 rounded-lg overflow-hidden">
                   <Image
                     src={item.image}
-                    alt={item.title}
+                    alt={`${item.title} - Research focus in Applied Mathematics`}
                     fill
                     className="object-cover"
                   />

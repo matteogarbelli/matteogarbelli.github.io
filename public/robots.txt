@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://matteogarbelli.github.io/sitemap.xml
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
+
+# Academic content is public
+User-agent: *
+Allow: /images/
+Allow: /files/
+
+# Block crawling of admin or private areas (if any)
+Disallow: /admin/
+Disallow: /.git/
