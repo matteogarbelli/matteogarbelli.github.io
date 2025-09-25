@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
     template: '%s | Matteo Garbelli'
   },
-  description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
+  description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
   keywords: [
     'Matteo Garbelli',
     'Applied Mathematics',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   category: 'Academic',
   openGraph: {
     title: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
-    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
+    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
     url: 'https://matteogarbelli.github.io',
     siteName: 'Matteo Garbelli - Academic Portfolio',
     images: [{
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
-    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
+    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
     images: ['https://matteogarbelli.github.io/images/profile.jpg'],
   },
   robots: {

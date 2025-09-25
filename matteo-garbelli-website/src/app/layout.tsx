@@ -8,12 +8,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
-  description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, and Mean Field Games.',
+  description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, and Mean Field Games.',
   keywords: ['Matteo Garbelli', 'Applied Mathematics', 'Stochastic Processes', 'Machine Learning', 'Mean Field Games', 'University of Verona'],
   authors: [{ name: 'Matteo Garbelli' }],
   openGraph: {
     title: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
-    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, and Mean Field Games.',
+    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, and Mean Field Games.',
     url: 'https://matteogarbelli.github.io',
     siteName: 'Matteo Garbelli',
     type: 'website',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
-    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Research in Stochastic Processes, Machine Learning, and Mean Field Games.',
+    description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, and Mean Field Games.',
   },
   robots: {
     index: true,

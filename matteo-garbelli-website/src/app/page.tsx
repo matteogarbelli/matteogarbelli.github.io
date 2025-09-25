@@ -18,7 +18,7 @@ export default function Home() {
                 Postdoc Researcher in Applied Mathematics at University of Verona
               </p>
               <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
-                Research in Stochastic Processes, Machine Learning, and Mean Field Games
+                Stochastic Processes, Machine Learning, Mean Field Games
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
@@ -74,7 +74,7 @@ export default function Home() {
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My research interests lie in the areas of <strong>Stochastic Processes</strong>, <strong>Machine Learning</strong>, 
-                and <strong>Mean Field Games</strong>. In particular, my current research focuses on:
+                and <strong>Mean Field Games</strong>. My current research focuses on:
               </p>
               <ul className="mt-6 space-y-2 text-gray-600 dark:text-gray-300">
                 <li>• Mean Field Games with (and without) common noise</li>
@@ -150,7 +150,7 @@ export default function Home() {
               },
               {
                 title: 'Adapted Wasserstein Distance',
-                description: 'Advanced mathematical frameworks',
+                description: 'Causal optimal transport',
                 image: '/images/adapted-wasserstein.png',
               },
               {
@@ -398,7 +398,7 @@ export default function Home() {
                       <p className="text-gray-600 dark:text-gray-400">PyTorch, TensorFlow, Scikit-learn</p>
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-white mb-1">Specialized Algorithms</p>
+                      <p className="font-medium text-gray-900 dark:text-white mb-1">Forecasting Algorithms</p>
                       <p className="text-gray-600 dark:text-gray-400">XGBoost, LSTM, Tree-based methods</p>
                     </div>
                   </div>
