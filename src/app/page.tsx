@@ -18,7 +18,7 @@ export default function Home() {
                 Postdoc Researcher in Applied Mathematics at University of Verona
               </p>
               <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
-                Stochastic Processes, Machine Learning, and Mean Field Games
+                Stochastic Processes, Machine Learning, Mean Field Games
               </p>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <a
@@ -81,6 +81,7 @@ export default function Home() {
                 <li>• Adapted Wasserstein Distance</li>
                 <li>• BSDEs with memory features</li>
                 <li>• McKean Vlasov S(P)DES</li>
+                <li>• Reinforcement Learning for energy markets</li>
               </ul>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-6">
                 I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio. 
