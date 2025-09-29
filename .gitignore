@@ -14,6 +14,12 @@ out/
 build/
 dist/
 
+# Generated files (don't commit build outputs)
+*.html
+*.txt
+index.*
+404.*
+
 # Misc
 .DS_Store
 *.tsbuildinfo
@@ -36,3 +42,12 @@ next-env.d.ts
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Old Jekyll files (in case they regenerate)
+_site/
+_data/
+_includes/
+_layouts/
+_pages/
+_sass/
+_drafts/
