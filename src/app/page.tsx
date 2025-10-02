@@ -69,7 +69,14 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                I am a Postdoc Researcher in Applied Mathematics at the Department of Computer Science, University of Verona. 
+                I am a <a
+                  href="https://www.di.univr.it/?ent=persona&id=62393"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  Postdoc Researcher
+                </a> in Applied Mathematics at the Department of Computer Science, University of Verona.
                 I work in the Stochastic Analysis group led by Luca Di Persio.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
@@ -84,8 +91,15 @@ export default function Home() {
                 <li>• Reinforcement Learning for energy markets</li>
               </ul>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-6">
-                I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio. 
-                My thesis was titled <em>&ldquo;Stochastic Differential Equations and Mean Field Games towards Machine Learning applications&rdquo;</em>.
+                I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio.
+                My <a
+                  href="https://iris.unitn.it/handle/11572/398234"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  thesis
+                </a> was titled <em>&ldquo;Stochastic Differential Equations and Mean Field Games towards Machine Learning applications&rdquo;</em>.
               </p>
             </div>
             
