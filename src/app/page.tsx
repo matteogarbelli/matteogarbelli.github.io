@@ -80,8 +80,7 @@ export default function Home() {
                 I work in the Stochastic Analysis group led by Luca Di Persio.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
-                My research interests lie in the areas of <strong>Stochastic Processes</strong>, <strong>Machine Learning</strong>, 
-                and <strong>Mean Field Games</strong>. In particular, my current research focuses on:
+                My current research focuses on:
               </p>
               <ul className="mt-6 space-y-2 text-gray-600 dark:text-gray-300">
                 <li>• Mean Field Games with (and without) common noise</li>
@@ -445,7 +444,7 @@ export default function Home() {
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
                 I&apos;m always interested in discussing research opportunities, collaborations, 
-                and innovative projects in stochastic processes, machine learning, and mathematical finance.
+                and innovative projects in academia and industry. Feel free to reach out!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
