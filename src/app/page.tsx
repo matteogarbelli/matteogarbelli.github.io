@@ -298,23 +298,31 @@ export default function Home() {
                   title: "Numerical Methods for Mathematical Finance",
                   type: "Master Degree in Mathematics",
                   venue: "University of Verona",
+                  year: "2025-2026",
+                  description: "Numerical techniques for SDEs",
+                  githubUrl: "https://github.com/matteogarbelli/NMMF",
+                  url: "https://www.corsi.univr.it/?ent=cs&id=1352&menu=studiare&tab=insegnamenti&codiceCs=S72R&codins=4S001114&crediti=6.0&aa=2025/2026&lang=it"
+                },
+                {
+                  title: "Numerical Methods for Mathematical Finance",
+                  type: "Master Degree in Mathematics",
+                  venue: "University of Verona",
                   year: "2024-2025",
-                  description: "Advanced numerical techniques for solving mathematical finance problems including Monte Carlo methods, finite difference schemes, and stochastic differential equations",
-                  githubUrl: "https://github.com/matteogarbelli/NM4MF24"
+                  description: "Numerical techniques for SDEs"
                 },
                 {
                   title: "Statistical Learning",
                   type: "Master Degree in Data Science",
                   venue: "University of Verona",
                   year: "2020-2021",
-                  description: "Statistical methods and machine learning techniques for data analysis and prediction"
+                  description: "Statistical methods and machine learning techniques for data science"
                 },
                 {
                   title: "Advanced Topics in Mathematical Finance",
                   type: "Master Degree in Mathematics",
                   venue: "University of Verona",
                   year: "2020-2021",
-                  description: "Advanced mathematical techniques for financial modeling and risk management"
+                  description: "Mathematical techniques for financial modeling and risk management"
                 }
               ].map((course, index) => (
                 <div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
