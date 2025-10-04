@@ -46,7 +46,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative mx-auto h-48 w-48 lg:h-56 lg:w-56">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/profile.png"
                   alt="Matteo Garbelli - Postdoc Researcher in Applied Mathematics at University of Verona"
                   fill
                   className="rounded-full object-contain shadow-2xl"

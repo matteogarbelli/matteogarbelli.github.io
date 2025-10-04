@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: 'https://matteogarbelli.github.io',
     siteName: 'Matteo Garbelli - Academic Portfolio',
     images: [{
-      url: 'https://matteogarbelli.github.io/images/profile.jpg',
+      url: 'https://matteogarbelli.github.io/images/profile.png',
       width: 800,
       height: 600,
       alt: 'Matteo Garbelli - Postdoc Researcher'
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Matteo Garbelli - Postdoc Researcher in Applied Mathematics',
     description: 'Postdoc Researcher in Applied Mathematics at University of Verona. Stochastic Processes, Machine Learning, Mean Field Games, and Energy Markets.',
-    images: ['https://matteogarbelli.github.io/images/profile.jpg'],
+    images: ['https://matteogarbelli.github.io/images/profile.png'],
   },
   robots: {
     index: true,
@@ -93,7 +93,7 @@ export default function RootLayout({
                 "name": "University of Verona"
               },
               "url": "https://matteogarbelli.github.io",
-              "image": "https://matteogarbelli.github.io/images/profile.jpg",
+              "image": "https://matteogarbelli.github.io/images/profile.png",
               "sameAs": [
                 "https://scholar.google.com/citations?user=your-google-scholar-id",
                 "https://github.com/matteogarbelli",
