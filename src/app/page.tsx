@@ -151,9 +151,6 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Research Focus
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              My current research focuses on the intersection of mathematics and machine learning
-            </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -209,9 +206,6 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Publications
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Recent research contributions in applied mathematics
-            </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -299,9 +293,6 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Teaching
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Courses and educational activities
-            </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -380,9 +371,6 @@ export default function Home() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Additional Information
             </h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-              Professional activities and technical skills
-            </p>
           </div>
           
           <div className="max-w-4xl mx-auto">
@@ -440,11 +428,11 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                Let&apos;s Collaborate
+                Feel free to reach out!
               </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                I&apos;m always interested in discussing research opportunities, collaborations, 
-                and innovative projects in academia and industry. Feel free to reach out!
+                I am always interested in discussing research opportunities, collaborations, 
+                and innovative projects in academia and industry. 
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
