@@ -427,9 +427,6 @@ export default function Home() {
           
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                Feel free to reach out!
-              </h3>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
                 I am always interested in discussing research opportunities, collaborations, 
                 and innovative projects in academia and industry. 
