@@ -20,28 +20,6 @@ export default function Home() {
               <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
                 Stochastic Processes, Machine Learning, Mean Field Games
               </p>
-              <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                <a
-                  href="#contact"
-                  onClick={(e) => {
-                    e.preventDefault()
-                    document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })
-                  }}
-                  className="inline-flex items-center justify-center rounded-md bg-blue-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
-                >
-                  Get in Touch
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-                <a
-                  href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-5 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                >
-                  <ExternalLink className="mr-2 h-4 w-4" />
-                  Google Scholar
-                </a>
-              </div>
             </div>
             <div className="relative">
               <div className="relative mx-auto h-48 w-48 lg:h-56 lg:w-56">
@@ -61,11 +39,6 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              About Me
-            </h2>
-          </div>
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
@@ -77,7 +50,6 @@ export default function Home() {
                 >
                   Postdoc Researcher
                 </a> in Applied Mathematics at the Department of Computer Science, University of Verona.
-                I work in the Stochastic Analysis group led by Luca Di Persio.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My current research focuses on:
@@ -98,7 +70,7 @@ export default function Home() {
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
                   thesis
-                </a> was titled <em>&ldquo;Stochastic Differential Equations and Mean Field Games towards Machine Learning applications&rdquo;</em>.
+                </a> focused on <em>&ldquo;Stochastic Differential Equations and Mean Field Games towards Machine Learning applications&rdquo;</em>.
               </p>
             </div>
             
