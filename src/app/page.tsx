@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Hero Section - Smaller */}
-      <section id="home" className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-blue-900/20 py-16 sm:py-20">
+      <section id="home" className="relative overflow-hidden bg-white dark:bg-gray-900 py-12 sm:py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center">
             <div>
@@ -27,7 +27,7 @@ export default function Home() {
                   src="/images/profile.png"
                   alt="Matteo Garbelli - Postdoc Researcher in Applied Mathematics at University of Verona"
                   fill
-                  className="rounded-full object-contain shadow-2xl"
+                  className="rounded-full object-contain"
                   priority
                 />
               </div>
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800">
+      <section id="about" className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg dark:prose-invert mx-auto">
@@ -61,21 +61,10 @@ export default function Home() {
                 <li>• McKean Vlasov S(P)DES</li>
                 <li>• Reinforcement Learning for energy markets</li>
               </ul>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-6">
-                I obtained my PhD in 2023 from the University of Trento under the supervision of Luca Di Persio.
-                My <a
-                  href="https://iris.unitn.it/handle/11572/398234"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
-                >
-                  thesis
-                </a> focused on <em>&ldquo;Stochastic Differential Equations and Mean Field Games towards Machine Learning applications&rdquo;</em>.
-              </p>
             </div>
             
             <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
-              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <GraduationCap className="inline h-5 w-5 mr-2" />
                   Education
@@ -84,11 +73,21 @@ export default function Home() {
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">PhD in Mathematics</p>
                     <p className="text-gray-600 dark:text-gray-400">University of Trento, 2023</p>
+                    <p className="text-gray-600 dark:text-gray-400 text-xs mt-2 leading-relaxed">
+                      <a
+                        href="https://iris.unitn.it/handle/11572/398234"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                      >
+                        Thesis
+                      </a>: <em>&ldquo;Stochastic Differential Equations and Mean Field Games towards Machine Learning applications&rdquo;</em>
+                    </p>
                   </div>
                 </div>
               </div>
               
-              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <Award className="inline h-5 w-5 mr-2" />
                   Current Grant
@@ -116,63 +115,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Research Focus Section */}
-      <section className="py-16 sm:py-20 bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
-              Research Focus
-            </h2>
-          </div>
-          <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {[
-              {
-                title: 'Mean Field Games',
-                description: 'With and without common noise',
-                image: '/images/mfg.jpg',
-              },
-              {
-                title: 'Adapted Wasserstein Distance',
-                description: 'Causal Optimal Transports',
-                image: '/images/adapted-wasserstein.png',
-              },
-              {
-                title: 'BSDEs with Memory',
-                description: 'Backward stochastic differential equations',
-                image: '/images/bsde.png',
-              },
-              {
-                title: 'McKean Vlasov S(P)DEs',
-                description: 'Stochastic partial differential equations',
-                image: '/images/spde.png',
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="rounded-lg bg-gray-50 dark:bg-gray-800 p-6 text-center hover:shadow-lg transition-shadow overflow-hidden"
-              >
-                <div className="relative h-32 w-full mb-4 rounded-lg overflow-hidden">
-                  <Image
-                    src={item.image}
-                    alt={`${item.title} - Research focus in Applied Mathematics`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Publications Section */}
-      <section id="publications" className="py-16 sm:py-20 bg-white dark:bg-gray-900">
+      <section id="publications" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
@@ -221,7 +165,7 @@ export default function Home() {
                   url: "https://link.springer.com/article/10.1007/s00030-023-00879-3"
                 },
               ].map((publication, index) => (
-                <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 hover:shadow-md transition-shadow">
+                <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     {publication.title}
                   </h3>
@@ -259,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* Teaching Section */}
-      <section id="teaching" className="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800">
+      <section id="teaching" className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
@@ -301,7 +245,7 @@ export default function Home() {
                   description: "Mathematical techniques for financial modeling and risk management"
                 }
               ].map((course, index) => (
-                <div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
+                <div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
@@ -337,7 +281,7 @@ export default function Home() {
       </section>
 
       {/* Additional Information Section */}
-      <section className="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800">
+      <section className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
@@ -347,7 +291,7 @@ export default function Home() {
           
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
-              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <BookOpen className="inline h-5 w-5 mr-2" />
                   Peer Review Activity
@@ -364,7 +308,7 @@ export default function Home() {
                 </div>
               </div>
               
-              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <Code className="inline h-5 w-5 mr-2" />
                   ML Frameworks & Coding
@@ -392,35 +336,29 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 sm:py-20 bg-white dark:bg-gray-900">
+      <section id="contact" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
             
           
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-8">
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-6">
-                I am always interested in discussing research opportunities, collaborations, 
-                and innovative projects in academia and industry. 
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="mailto:matteo.garbelli@univr.it"
-                  className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
-                >
-                  <Mail className="mr-2 h-5 w-5" />
-                  Send Email
-                </a>
-                <a
-                  href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-                >
-                  <ExternalLink className="mr-2 h-5 w-5" />
-                  Google Scholar
-                </a>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="mailto:matteo.garbelli@univr.it"
+                className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                Send Email
+              </a>
+              <a
+                href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
+              >
+                <ExternalLink className="mr-2 h-5 w-5" />
+                Google Scholar
+              </a>
             </div>
           </div>
         </div>
