@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ArrowRight, ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code } from 'lucide-react'
+import { ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code } from 'lucide-react'
 
 export default function Home() {
   return (
