@@ -141,12 +141,6 @@ export default function Home() {
                   url: "https://doi.org/10.1016/j.spa.2023.104277"
                 },
                 {
-                  title: "The Master Equation in a Bounded Domain with Absorption",
-                  venue: "Preprint on arXiv",
-                  year: "2024",
-                  url: "https://doi.org/10.48550/arXiv.2203.15583"
-                },
-                {
                   title: "Volatility Forecasting with Hybrid Neural Networks methods for Risk Parity Investment Strategies",
                   venue: "Expert Systems with Applications",
                   year: "2023",
@@ -183,6 +177,52 @@ export default function Home() {
                   </a>
                 </div>
               ))}
+            </div>
+
+            <div className="mt-12 mb-8">
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white mb-6">
+                Preprints
+              </h3>
+              <div className="space-y-6">
+                {[
+                  {
+                    title: "Mild Solutions for Path-Dependent Parabolic PDEs with Neumann Boundary Conditions via Generalized BSDEs",
+                    venue: "Preprint on arXiv",
+                    year: "2026",
+                    url: "https://arxiv.org/abs/2601.16178"
+                  },
+                  {
+                    title: "Data-Driven Stochastic VRP: Integration of Forecast Duration into Optimization for Utility Workforce Management",
+                    venue: "Preprint on arXiv",
+                    year: "2026",
+                    url: "https://arxiv.org/abs/2601.07514"
+                  },
+                  {
+                    title: "The Master Equation in a Bounded Domain with Absorption",
+                    venue: "Preprint on arXiv",
+                    year: "2025",
+                    url: "https://arxiv.org/abs/2203.15583"
+                  }
+                ].map((publication, index) => (
+                  <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                      {publication.title}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 mb-3">
+                      {publication.venue} ({publication.year})
+                    </p>
+                    <a
+                      href={publication.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                    >
+                      <ExternalLink className="mr-1 h-4 w-4" />
+                      View Preprint
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
             
             <div className="mt-8 text-center">
@@ -297,6 +337,10 @@ export default function Home() {
                   Peer Review Activity
                 </h3>
                 <div className="space-y-3 text-sm">
+                  <div>
+                    <p className="font-medium text-gray-900 dark:text-white">Journal of Scientific Computing</p>
+                    <p className="text-gray-600 dark:text-gray-400">Springer</p>
+                  </div>
                   <div>
                     <p className="font-medium text-gray-900 dark:text-white">Chaos</p>
                     <p className="text-gray-600 dark:text-gray-400">American Institute of Physics</p>
