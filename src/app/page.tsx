@@ -6,31 +6,59 @@ import { ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code } from
 export default function Home() {
   return (
     <div className="relative">
-      {/* Hero Section - Smaller */}
-      <section id="home" className="relative overflow-hidden bg-white dark:bg-gray-900 py-12 sm:py-16">
+      {/* Hero Section */}
+      <section id="home" className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center">
-            <div>
-              <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl lg:text-5xl">
-                Matteo Garbelli
-              </h1>
-              <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
-                Postdoc Researcher in Applied Mathematics at University of Verona
-              </p>
-              <p className="mt-3 text-base text-gray-500 dark:text-gray-400">
-                Stochastic Processes, Machine Learning, Mean Field Games
-              </p>
+          <div className="flex flex-col items-center text-center">
+            <div className="relative h-48 w-48 lg:h-56 lg:w-56 mb-8">
+              <Image
+                src="/images/profile.png"
+                alt="Matteo Garbelli"
+                fill
+                className="rounded-full object-cover border-4 border-white/10"
+                priority
+              />
             </div>
-            <div className="relative">
-              <div className="relative mx-auto h-48 w-48 lg:h-56 lg:w-56">
-                <Image
-                  src="/images/profile.png"
-                  alt="Matteo Garbelli - Postdoc Researcher in Applied Mathematics at University of Verona"
-                  fill
-                  className="rounded-full object-contain"
-                  priority
-                />
-              </div>
+            
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4">
+              Matteo Garbelli
+            </h1>
+            <p className="text-xl text-gray-300 mb-2 font-light">
+              Researcher in Applied Mathematics
+            </p>
+            <p className="text-lg text-gray-400 mb-8 font-light">
+              MOX, Department of Mathematics, Politecnico di Milano
+            </p>
+            
+            <div className="flex items-center space-x-6">
+              <a 
+                href="mailto:matteo.garbelli@polimi.it" 
+                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                title="Email"
+              >
+                <Mail className="h-7 w-7" />
+                <span className="sr-only">Email</span>
+              </a>
+              <a 
+                href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                title="Google Scholar"
+              >
+                <GraduationCap className="h-7 w-7" />
+                <span className="sr-only">Google Scholar</span>
+              </a>
+              <a 
+                href="https://github.com/matteogarbelli" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                title="GitHub"
+              >
+                <Github className="h-7 w-7" />
+                <span className="sr-only">GitHub</span>
+              </a>
             </div>
           </div>
         </div>
@@ -39,17 +67,25 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-12 sm:py-16 bg-gray-50 dark:bg-gray-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+              About
+            </h2>
+          </div>
           <div className="max-w-4xl mx-auto">
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 I am a <a
-                  href="https://www.di.univr.it/?ent=persona&id=62393"
+                  href="https://www.mate.polimi.it/?view=pp&id=3249&lg=it"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
-                  Postdoc Researcher
-                </a> in Applied Mathematics at the Department of Computer Science, University of Verona.
+                  Contract Researcher (art. 22)
+                </a> at the MOX Laboratory, Department of Mathematics, Politecnico di Milano.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
+                Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project (2024-2025).
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My current research focuses on:
@@ -63,7 +99,7 @@ export default function Home() {
               </ul>
             </div>
             
-            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2">
+            <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <GraduationCap className="inline h-5 w-5 mr-2" />
@@ -86,11 +122,31 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <Award className="inline h-5 w-5 mr-2" />
                   Current Grant
+                </h3>
+                <div className="text-sm">
+                  <p className="font-medium text-gray-900 dark:text-white mb-2">Contract Researcher (art. 22)</p>
+                  <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed mb-3">
+                    Under FIS Starting Grant <a
+                      href="https://mox.polimi.it/industrial-and-scientific-projects/project-detail/?id=198"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="font-bold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                    >
+                      SYNERGIZE
+                    </a>
+                  </p>
+                </div>
+              </div>
+              
+              <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                  <Award className="inline h-5 w-5 mr-2" />
+                  Past Grants
                 </h3>
                 <div className="text-sm">
                   <p className="font-medium text-gray-900 dark:text-white mb-2">GIRO-WM Project</p>
