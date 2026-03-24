@@ -478,13 +478,10 @@ export default function Home() {
           
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="mailto:matteo.garbelli@univr.it"
-                className="inline-flex items-center justify-center rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-blue-700 transition-colors"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Send Email
-              </a>
+              <div className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                <MapPin className="mr-2 h-5 w-5 text-gray-400" />
+                <span className="text-sm">Room 222, Edificio 14 (Nave), Department of Mathematics, Politecnico di Milano</span>
+              </div>
               <a
                 href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao"
                 target="_blank"
