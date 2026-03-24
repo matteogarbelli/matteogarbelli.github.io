@@ -10,7 +10,7 @@ export default function Home() {
       <section id="home" className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
-            <div className="relative h-40 w-40 lg:h-48 lg:w-48 mb-8">
+            <div className="relative h-32 w-32 lg:h-40 lg:w-40 mb-8">
               <Image
                 src="/images/profile.png"
                 alt="Matteo Garbelli"
@@ -104,13 +104,13 @@ export default function Home() {
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 I am a <a
-                  href="https://www.mate.polimi.it/?view=pp&id=3249&lg=it"
+                  href="https://mox.polimi.it/people/people-details/?id_staff=100179&nome_staff=Matteo%20Garbelli"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
-                  Postdoc Researcher in Applied Mathematics
-                </a> at the <a
+                  Postdoc Researcher
+                </a> in Applied Mathematics at the <a
                   href="https://mox.polimi.it/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -120,7 +120,7 @@ export default function Home() {
                 </a>, Department of Mathematics, Politecnico di Milano.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
-                Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project (2024-2025).
+                Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My current research focuses on:
