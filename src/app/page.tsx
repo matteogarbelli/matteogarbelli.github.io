@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code } from 'lucide-react'
+import { ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code, Linkedin } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <section id="home" className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center text-center">
-            <div className="relative h-48 w-48 lg:h-56 lg:w-56 mb-8">
+            <div className="relative h-40 w-40 lg:h-48 lg:w-48 mb-8">
               <Image
                 src="/images/profile.png"
                 alt="Matteo Garbelli"
@@ -20,11 +20,11 @@ export default function Home() {
               />
             </div>
             
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl mb-4">
               Matteo Garbelli
             </h1>
             <p className="text-xl text-gray-300 mb-2 font-light">
-              Researcher in Applied Mathematics
+              Postdoc Researcher in Applied Mathematics
             </p>
             <p className="text-lg text-gray-400 mb-8 font-light">
               MOX, Department of Mathematics, Politecnico di Milano
@@ -50,6 +50,24 @@ export default function Home() {
                 <span className="sr-only">Google Scholar</span>
               </a>
               <a 
+                href="https://www.researchgate.net/profile/Matteo-Garbelli" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                title="ResearchGate"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="h-7 w-7"
+                  role="img"
+                  aria-hidden="true"
+                >
+                  <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.564.377-.97.91-1.215 1.6h-2.596c-.482-1.38-1.74-2.165-3.77-2.165-2.612 0-4.503 1.636-4.503 5.347 0 3.733 1.946 5.397 4.542 5.397 1.258 0 2.254-.37 2.986-1.112v-2.03H9.982V5.7h5.81v6.78c-.97.945-2.624 1.51-4.832 1.51-4.225 0-7.07-2.75-7.07-7.21 0-4.585 2.825-7.39 7.378-7.39 2.053 0 3.655.77 4.503 2.05.356-.84.97-1.32 1.84-1.44H19.587c1.78.11 2.895 1.13 3.35 3.06h-2.22c-.225-.95-.59-1.43-1.1-1.43-.507 0-.85.49-1.03 1.48h2.36c.21.99.04 1.77-.52 2.34l-3.32 3.69 3.52 4.16h-2.68l-2.2-2.81-1.18 1.29v1.52h-2.24V8.58h2.24v3.6l4.74-5.32h2.24l-3.35 3.68 3.84 4.53h-2.65l-2.64-3.21-1.26 1.43v1.78h-2.24V8.58h2.24v3.6l4.74-5.32h2.24l-3.35 3.68 3.84 4.53h-2.65z" />
+                </svg>
+                <span className="sr-only">ResearchGate</span>
+              </a>
+              <a 
                 href="https://github.com/matteogarbelli" 
                 target="_blank" 
                 rel="noopener noreferrer" 
@@ -58,6 +76,16 @@ export default function Home() {
               >
                 <Github className="h-7 w-7" />
                 <span className="sr-only">GitHub</span>
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/matteo-garbelli-1a0bb3b1" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                title="LinkedIn"
+              >
+                <Linkedin className="h-7 w-7" />
+                <span className="sr-only">LinkedIn</span>
               </a>
             </div>
           </div>
@@ -81,8 +109,15 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
-                  Contract Researcher (art. 22)
-                </a> at the MOX Laboratory, Department of Mathematics, Politecnico di Milano.
+                  Postdoc Researcher in Applied Mathematics
+                </a> at the <a
+                  href="https://mox.polimi.it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  MOX Laboratory
+                </a>, Department of Mathematics, Politecnico di Milano.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project (2024-2025).
