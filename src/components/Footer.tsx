@@ -10,18 +10,12 @@ export default function Footer() {
               Contact Information
             </h3>
             <div className="space-y-3">
-              <div className="flex items-center text-gray-600 dark:text-gray-400">
-                <Mail className="h-5 w-5 mr-2" />
-                <a href="mailto:matteo.garbelli@univr.it" className="hover:text-blue-600 dark:hover:text-blue-400">
-                  matteo.garbelli@univr.it
-                </a>
-              </div>
               <div className="flex items-start text-gray-600 dark:text-gray-400">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5" />
                 <div>
-                  <p>Room 2.22, Department of Informatics</p>
-                  <p>University of Verona</p>
-                  <p>Strada Le Grazie 15, Verona</p>
+                  <p>Room 222, Edificio 14 (Nave)</p>
+                  <p>Department of Mathematics</p>
+                  <p>Politecnico di Milano</p>
                 </div>
               </div>
             </div>

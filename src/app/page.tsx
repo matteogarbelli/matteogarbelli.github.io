@@ -11,10 +11,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Column: Text and Icons */}
-            <div className="text-center lg:text-left order-2 lg:order-1">
-              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl mb-4">
-                Matteo Garbelli
-              </h1>
+            <div className="flex justify-center lg:text-left order-2 lg:order-1">
               <p className="text-xl text-gray-300 mb-2 font-light">
                 Postdoc Researcher in Applied Mathematics
               </p>
@@ -84,7 +81,7 @@ export default function Home() {
 
             {/* Right Column: Profile Image */}
             <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-              <div className="relative h-36 w-36 lg:h-56 lg:w-56">
+              <div className="relative h-24 w-24 lg:h-56 lg:w-56">
                 <Image
                   src="/images/profile.png"
                   alt="Matteo Garbelli"
@@ -123,10 +120,7 @@ export default function Home() {
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
                   MOX Laboratory
-                </a>, Department of Mathematics, Politecnico di Milano.
-              </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
-                Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project.
+                </a>, Department of Mathematics, Politecnico di Milano. Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My current research focuses on:
@@ -471,22 +465,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-8">
-              Contact Information
-            </h2>
-            <div className="text-gray-600 dark:text-gray-400 space-y-2">
-              <p>Room 222, Edificio 14 (Nave)</p>
-              <p>Department of Mathematics</p>
-              <p>Politecnico di Milano</p>
             </div>
           </div>
         </div>
