@@ -8,14 +8,17 @@ export default function Home() {
     <div className="relative">
       {/* Hero Section */}
       <section id="home" className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Column: Text and Icons */}
             <div className="text-center lg:text-left order-2 lg:order-1">
-              <p className="text-2xl text-gray-300 mb-2 font-light">
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl mb-4">
+                Matteo Garbelli
+              </h1>
+              <p className="text-xl text-gray-300 mb-2 font-light">
                 Postdoc Researcher in Applied Mathematics
               </p>
-              <p className="text-xl text-gray-400 mb-8 font-light">
+              <p className="text-lg text-gray-400 mb-8 font-light">
                 MOX, Department of Mathematics, Politecnico di Milano
               </p>
               
@@ -81,7 +84,7 @@ export default function Home() {
 
             {/* Right Column: Profile Image */}
             <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-              <div className="relative h-64 w-64 lg:h-72 lg:w-72">
+              <div className="relative h-36 w-36 lg:h-56 lg:w-56">
                 <Image
                   src="/images/profile.png"
                   alt="Matteo Garbelli"
