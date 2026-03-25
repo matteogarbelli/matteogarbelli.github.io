@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code, Linkedin, MapPin } from 'lucide-react'
+import { ExternalLink, Mail, BookOpen, GraduationCap, Award, Github, Code, Linkedin } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -9,84 +9,87 @@ export default function Home() {
       {/* Hero Section */}
       <section id="home" className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col items-center text-center">
-            <div className="relative h-32 w-32 lg:h-40 lg:w-40 mb-8">
-              <Image
-                src="/images/profile.png"
-                alt="Matteo Garbelli"
-                fill
-                className="rounded-full object-cover border-4 border-white/10"
-                priority
-              />
-            </div>
-            
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl mb-4">
-              Matteo Garbelli
-            </h1>
-            <p className="text-xl text-gray-300 mb-2 font-light">
-              Postdoc Researcher in Applied Mathematics
-            </p>
-            <p className="text-lg text-gray-400 mb-8 font-light">
-              MOX, Department of Mathematics, Politecnico di Milano
-            </p>
-            
-            <div className="flex items-center space-x-6">
-              <a 
-                href="mailto:matteo.garbelli@polimi.it" 
-                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
-                title="Email"
-              >
-                <Mail className="h-7 w-7" />
-                <span className="sr-only">Email</span>
-              </a>
-              <a 
-                href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
-                title="Google Scholar"
-              >
-                <GraduationCap className="h-7 w-7" />
-                <span className="sr-only">Google Scholar</span>
-              </a>
-              <a 
-                href="https://www.researchgate.net/profile/Matteo-Garbelli" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
-                title="ResearchGate"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-7 w-7"
-                  role="img"
-                  aria-hidden="true"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column: Text and Icons */}
+            <div className="text-center lg:text-left order-2 lg:order-1">
+              <p className="text-2xl text-gray-300 mb-2 font-light">
+                Postdoc Researcher in Applied Mathematics
+              </p>
+              <p className="text-xl text-gray-400 mb-8 font-light">
+                MOX, Department of Mathematics, Politecnico di Milano
+              </p>
+              
+              <div className="flex items-center justify-center lg:justify-start space-x-6">
+                <a 
+                  href="mailto:matteo.garbelli@polimi.it" 
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                  title="Email"
                 >
-                  <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z" />
-                </svg>
-                <span className="sr-only">ResearchGate</span>
-              </a>
-              <a 
-                href="https://github.com/matteogarbelli" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
-                title="GitHub"
-              >
-                <Github className="h-7 w-7" />
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/matteo-garbelli-1a0bb3b1" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
-                title="LinkedIn"
-              >
-                <Linkedin className="h-7 w-7" />
-                <span className="sr-only">LinkedIn</span>
-              </a>
+                  <Mail className="h-7 w-7" />
+                  <span className="sr-only">Email</span>
+                </a>
+                <a 
+                  href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                  title="Google Scholar"
+                >
+                  <GraduationCap className="h-7 w-7" />
+                  <span className="sr-only">Google Scholar</span>
+                </a>
+                <a 
+                  href="https://www.researchgate.net/profile/Matteo-Garbelli" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                  title="ResearchGate"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="h-7 w-7"
+                    role="img"
+                    aria-hidden="true"
+                  >
+                    <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.123 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .077.53h-.005a3.334 3.334 0 0 0 .113.438c.245.743.65 1.303 1.214 1.68.565.376 1.256.564 2.075.564.8 0 1.536-.213 2.105-.603.57-.39.94-.916 1.175-1.65.076-.235.135-.558.177-.93a10.9 10.9 0 0 0 .043-1.207v-.82c0-.095-.047-.142-.14-.142h-3.064c-.094 0-.14.047-.14.141v.956c0 .094.046.14.14.14h1.666c.056 0 .084.03.084.086 0 .36 0 .62-.036.865-.038.244-.1.447-.147.606-.108.385-.348.664-.638.876-.29.212-.738.35-1.227.35-.545 0-.901-.15-1.21-.353-.306-.203-.517-.454-.67-.915a3.136 3.136 0 0 1-.147-.762 17.366 17.367 0 0 1-.034-.656c-.01-.26-.014-.572-.014-.939a26.401 26.403 0 0 1 .014-.938 15.821 15.822 0 0 1 .035-.656 3.19 3.19 0 0 1 .148-.76 1.89 1.89 0 0 1 .742-1.01c.344-.244.593-.352 1.137-.352.508 0 .815.096 1.144.303.33.207.528.492.764.925.047.094.111.118.198.07l1.044-.43c.075-.048.09-.115.042-.199a3.549 3.549 0 0 0-.466-.742 3 3 0 0 0-.679-.607 3.313 3.313 0 0 0-.903-.41A4.068 4.068 0 0 0 19.586 0zM8.217 5.836c-1.69 0-3.036.086-4.297.086-1.146 0-2.291 0-3.007-.029v.831l1.088.2c.744.144 1.174.488 1.174 2.264v11.288c0 1.777-.43 2.12-1.174 2.263l-1.088.2v.832c.773-.029 2.12-.086 3.465-.086 1.29 0 2.951.057 3.667.086v-.831l-1.49-.2c-.773-.115-1.174-.487-1.174-2.264v-4.784c.688.057 1.29.057 2.206.057 1.748 3.123 3.41 5.472 4.355 6.56.86 1.032 2.177 1.691 3.839 1.691.487 0 1.003-.086 1.318-.23v-.744c-1.031 0-2.063-.716-2.808-1.518-1.26-1.376-2.95-3.582-4.355-6.074 2.32-.545 4.04-2.722 4.04-4.9 0-3.208-2.492-4.698-5.758-4.698zm-.515 1.29c2.406 0 3.839 1.26 3.839 3.552 0 2.263-1.547 3.782-4.097 3.782-.974 0-1.404-.03-2.063-.086v-7.19c.66-.059 1.547-.059 2.32-.059z" />
+                  </svg>
+                  <span className="sr-only">ResearchGate</span>
+                </a>
+                <a 
+                  href="https://github.com/matteogarbelli" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                  title="GitHub"
+                >
+                  <Github className="h-7 w-7" />
+                  <span className="sr-only">GitHub</span>
+                </a>
+                <a 
+                  href="https://www.linkedin.com/in/matteo-garbelli-1a0bb3b1" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-white transition-colors hover:scale-110 transform duration-200"
+                  title="LinkedIn"
+                >
+                  <Linkedin className="h-7 w-7" />
+                  <span className="sr-only">LinkedIn</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right Column: Profile Image */}
+            <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+              <div className="relative h-64 w-64 lg:h-72 lg:w-72">
+                <Image
+                  src="/images/profile.png"
+                  alt="Matteo Garbelli"
+                  fill
+                  className="rounded-2xl object-cover border-4 border-white/10 shadow-2xl"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -473,24 +476,14 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
-            
-          
           <div className="max-w-4xl mx-auto text-center">
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <div className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
-                <MapPin className="mr-2 h-5 w-5 text-gray-400" />
-                <span className="text-sm">Room 222, Edificio 14 (Nave), Department of Mathematics, Politecnico di Milano</span>
-              </div>
-              <a
-                href="https://scholar.google.com/citations?user=XuqRLqUAAAAJ&hl=it&oi=ao"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-3 text-base font-medium text-gray-700 dark:text-gray-200 shadow-sm hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
-              >
-                <ExternalLink className="mr-2 h-5 w-5" />
-                Google Scholar
-              </a>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-8">
+              Contact Information
+            </h2>
+            <div className="text-gray-600 dark:text-gray-400 space-y-2">
+              <p>Room 222, Edificio 14 (Nave)</p>
+              <p>Department of Mathematics</p>
+              <p>Politecnico di Milano</p>
             </div>
           </div>
         </div>
