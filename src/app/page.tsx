@@ -9,9 +9,12 @@ export default function Home() {
       {/* Hero Section */}
       <section id="home" className="relative overflow-hidden bg-gray-900 py-24 sm:py-32">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full">
             {/* Left Column: Text and Icons */}
-            <div className="flex justify-center lg:text-left order-2 lg:order-1">
+            <div className="flex flex-col justify-center text-center lg:text-left order-2 lg:order-1 h-full">
+              <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl mb-4">
+                Matteo Garbelli
+              </h1>
               <p className="text-xl text-gray-300 mb-2 font-light">
                 Postdoc Researcher in Applied Mathematics
               </p>
@@ -80,8 +83,8 @@ export default function Home() {
             </div>
 
             {/* Right Column: Profile Image */}
-            <div className="flex justify-center lg:justify-end order-1 lg:order-2">
-              <div className="relative h-24 w-24 lg:h-56 lg:w-56">
+            <div className="flex justify-center lg:justify-end order-1 lg:order-2 h-full items-center">
+              <div className="relative h-64 w-48 lg:h-80 lg:w-60">
                 <Image
                   src="/images/profile.png"
                   alt="Matteo Garbelli"
@@ -126,9 +129,9 @@ export default function Home() {
                 My current research focuses on:
               </p>
               <ul className="mt-6 space-y-2 text-gray-600 dark:text-gray-300">
+                <li>• Scientific Machine Learning</li>
                 <li>• Mean Field Games with (and without) common noise</li>
                 <li>• Adapted Wasserstein Distance</li>
-                <li>• BSDEs with memory features</li>
                 <li>• McKean Vlasov S(P)DES</li>
                 <li>• Reinforcement Learning for energy markets</li>
               </ul>
@@ -230,6 +233,12 @@ export default function Home() {
                   venue: "Stochastic Processes and their Applications",
                   year: "2024",
                   url: "https://doi.org/10.1016/j.spa.2023.104277"
+                },
+                {
+                  title: "The Master Equation in a Bounded Domain with Absorption",
+                  venue: "Preprint on arXiv",
+                  year: "2024",
+                  url: "https://doi.org/10.48550/arXiv.2203.15583"
                 },
                 {
                   title: "Volatility Forecasting with Hybrid Neural Networks methods for Risk Parity Investment Strategies",
@@ -465,6 +474,22 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-8">
+              Contact Information
+            </h2>
+            <div className="text-gray-600 dark:text-gray-400 space-y-2">
+              <p>Room 222, Edificio 14 (Nave)</p>
+              <p>Department of Mathematics</p>
+              <p>Politecnico di Milano</p>
             </div>
           </div>
         </div>
