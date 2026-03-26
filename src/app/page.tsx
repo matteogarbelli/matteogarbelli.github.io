@@ -478,22 +478,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-12 sm:py-16 bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl mb-8">
-              Contact Information
-            </h2>
-            <div className="text-gray-600 dark:text-gray-400 space-y-2">
-              <p>Room 222, Edificio 14 (Nave)</p>
-              <p>Department of Mathematics</p>
-              <p>Politecnico di Milano</p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
