@@ -123,7 +123,7 @@ export default function Home() {
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
                   MOX Laboratory
-                </a>, Department of Mathematics, Politecnico di Milano. Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona, where I worked on the GIRO-WM project.
+                </a>, Department of Mathematics, Politecnico di Milano. Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My current research focuses on:
@@ -164,7 +164,7 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <Award className="inline h-5 w-5 mr-2" />
-                  Current Grant
+                  Current Position
                 </h3>
                 <div className="text-sm">
                   <p className="font-medium text-gray-900 dark:text-white mb-2">Contract Researcher (art. 22)</p>
@@ -236,9 +236,9 @@ export default function Home() {
                 },
                 {
                   title: "The Master Equation in a Bounded Domain with Absorption",
-                  venue: "Preprint on arXiv",
-                  year: "2024",
-                  url: "https://doi.org/10.48550/arXiv.2203.15583"
+                  venue: "Nonlinear Analysis: Real World Applications",
+                  year: "2026",
+                  url: "https://www.sciencedirect.com/science/article/pii/S1468121826000726"
                 },
                 {
                   title: "Volatility Forecasting with Hybrid Neural Networks methods for Risk Parity Investment Strategies",
@@ -296,12 +296,6 @@ export default function Home() {
                     venue: "Preprint on arXiv",
                     year: "2026",
                     url: "https://arxiv.org/abs/2601.07514"
-                  },
-                  {
-                    title: "The Master Equation in a Bounded Domain with Absorption",
-                    venue: "Preprint on arXiv",
-                    year: "2025",
-                    url: "https://arxiv.org/abs/2203.15583"
                   }
                 ].map((publication, index) => (
                   <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
