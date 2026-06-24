@@ -55,6 +55,7 @@ export default function Navigation() {
   }
 
   return (
+    <>
     <header className="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Global">
         <div className="flex h-16 items-center justify-between">
@@ -97,8 +98,11 @@ export default function Navigation() {
           </div>
         </div>
       </nav>
-      {/* Mobile menu */}
-      {mobileMenuOpen && (
+    </header>
+    {/* Mobile menu — rendered outside <header> so `fixed` positions against the
+        viewport. The header's backdrop-blur creates a containing block that
+        would otherwise clip this panel to the header's height. */}
+    {mobileMenuOpen && (
         <div className="lg:hidden">
           <div className="fixed inset-0 z-50" />
           <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
@@ -145,6 +149,6 @@ export default function Navigation() {
           </div>
         </div>
       )}
-    </header>
+    </>
   )
 }
