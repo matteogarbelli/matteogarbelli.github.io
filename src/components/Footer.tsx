@@ -1,4 +1,4 @@
-import { Mail, MapPin, ExternalLink } from 'lucide-react'
+import { MapPin, ExternalLink } from 'lucide-react'
 
 export default function Footer() {
   return (
