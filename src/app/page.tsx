@@ -442,6 +442,14 @@ export default function Home() {
                     <p className="font-medium text-gray-900 dark:text-white">Nonlinear Dynamics</p>
                     <p className="text-gray-600 dark:text-gray-400">Springer Nature</p>
                   </div>
+                  <div>
+                    <p className="font-medium text-gray-900 dark:text-white">Energy Economics</p>
+                    <p className="text-gray-600 dark:text-gray-400">Elsevier</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-gray-900 dark:text-white">International Transactions on Electrical Energy Systems</p>
+                    <p className="text-gray-600 dark:text-gray-400">John Wiley and Sons Inc</p>
+                  </div>
                 </div>
               </div>
               
@@ -458,7 +466,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white mb-1">ML Frameworks</p>
-                      <p className="text-gray-600 dark:text-gray-400">PyTorch, TensorFlow, Scikit-learn</p>
+                      <p className="text-gray-600 dark:text-gray-400">PyTorch, TensorFlow, JAX, Scikit-learn, SciPy</p>
                     </div>
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white mb-1">Forecasting Algorithms</p>
