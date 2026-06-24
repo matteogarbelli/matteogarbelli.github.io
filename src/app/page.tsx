@@ -222,23 +222,28 @@ export default function Home() {
             <div className="space-y-6">
               {[
                 {
-                  title: "Reinforcement Learning for Bidding Strategy Optimization in Day-Ahead Energy Market",
-                  venue: "Energy Economics",
-                  year: "2025",
-                  url: "https://doi.org/10.1016/j.eneco.2025.108673"
-                },
-                
-                {
-                  title: "Time-Delayed Generalized BSDEs",
-                  venue: "Stochastic Processes and their Applications",
-                  year: "2024",
-                  url: "https://doi.org/10.1016/j.spa.2023.104277"
+                  title: "Data-Driven Stochastic VRP: Integration of Forecast Duration into Optimization for Utility Workforce Management",
+                  venue: "EURO Journal on Computational Optimization",
+                  year: "2026",
+                  url: "https://doi.org/10.1016/j.ejco.2026.100132"
                 },
                 {
                   title: "The Master Equation in a Bounded Domain with Absorption",
                   venue: "Nonlinear Analysis: Real World Applications",
                   year: "2026",
                   url: "https://www.sciencedirect.com/science/article/pii/S1468121826000726"
+                },
+                {
+                  title: "Reinforcement Learning for Bidding Strategy Optimization in Day-Ahead Energy Market",
+                  venue: "Energy Economics",
+                  year: "2025",
+                  url: "https://doi.org/10.1016/j.eneco.2025.108673"
+                },
+                {
+                  title: "Time-Delayed Generalized BSDEs",
+                  venue: "Stochastic Processes and their Applications",
+                  year: "2024",
+                  url: "https://doi.org/10.1016/j.spa.2023.104277"
                 },
                 {
                   title: "Volatility Forecasting with Hybrid Neural Networks methods for Risk Parity Investment Strategies",
@@ -290,12 +295,6 @@ export default function Home() {
                     venue: "Preprint on arXiv",
                     year: "2026",
                     url: "https://arxiv.org/abs/2601.16178"
-                  },
-                  {
-                    title: "Data-Driven Stochastic VRP: Integration of Forecast Duration into Optimization for Utility Workforce Management",
-                    venue: "Preprint on arXiv",
-                    year: "2026",
-                    url: "https://arxiv.org/abs/2601.07514"
                   }
                 ].map((publication, index) => (
                   <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
