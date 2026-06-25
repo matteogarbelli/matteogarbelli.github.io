@@ -456,21 +456,29 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-900 rounded-lg p-6 border border-gray-200 dark:border-gray-700">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
                   <Code className="inline h-5 w-5 mr-2" />
-                  ML Frameworks & Coding
+                  Technical Skills
                 </h3>
                 <div className="text-sm">
                   <div className="space-y-3">
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-white mb-1">Programming Languages</p>
-                      <p className="text-gray-600 dark:text-gray-400">Python, R, MATLAB</p>
+                      <p className="font-medium text-gray-900 dark:text-white mb-1">Programming</p>
+                      <p className="text-gray-600 dark:text-gray-400">Python, Bash, LaTeX</p>
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-white mb-1">ML Frameworks</p>
-                      <p className="text-gray-600 dark:text-gray-400">PyTorch, TensorFlow, JAX, Scikit-learn, SciPy</p>
+                      <p className="font-medium text-gray-900 dark:text-white mb-1">Scientific Computing</p>
+                      <p className="text-gray-600 dark:text-gray-400">MATLAB, R, FreeFEM, NumPy, SciPy</p>
                     </div>
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-white mb-1">Forecasting Algorithms</p>
-                      <p className="text-gray-600 dark:text-gray-400">XGBoost, LSTM, Tree-based methods</p>
+                      <p className="font-medium text-gray-900 dark:text-white mb-1">Machine Learning</p>
+                      <p className="text-gray-600 dark:text-gray-400">PyTorch, TensorFlow, JAX, Scikit-learn, XGBoost</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-gray-900 dark:text-white mb-1">Optimization</p>
+                      <p className="text-gray-600 dark:text-gray-400">Gurobi, OR-Tools, Optuna, Hydra</p>
+                    </div>
+                    <div>
+                      <p className="font-medium text-gray-900 dark:text-white mb-1">Data &amp; Dev Tools</p>
+                      <p className="text-gray-600 dark:text-gray-400">Pandas, Matplotlib, Seaborn, Git, Docker, Jupyter</p>
                     </div>
                   </div>
                 </div>
