@@ -123,7 +123,28 @@ export default function Home() {
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
                 >
                   MOX Laboratory
-                </a>, Department of Mathematics, Politecnico di Milano. Previously, I was a Postdoc Researcher at the Department of Computer Science, University of Verona.
+                </a>, Department of Mathematics, Politecnico di Milano. I am working in the Scientific Machine Learning group of <a
+                  href="https://regazzoni.faculty.polimi.it/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  Francesco Regazzoni
+                </a>. Previously, I was a Postdoc Researcher at the <a
+                  href="https://www.di.univr.it/?ent=home&page=dipartimento&lang=it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  Department of Computer Science
+                </a>, University of Verona, under the supervision of <a
+                  href="https://www.di.univr.it/?ent=persona&id=8773&lang=it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+                >
+                  Luca Di Persio
+                </a>.
               </p>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed mt-4">
                 My current research focuses on:
